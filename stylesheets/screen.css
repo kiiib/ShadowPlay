@@ -1,0 +1,2105 @@
+@charset "UTF-8";
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+/*! normalize.css v3.0.0 | Base | MIT License | git.io/normalize */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+/*! normalize.css v3.0.0 | Links | MIT License | git.io/normalize */
+a {
+  background: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/*! normalize.css v3.0.0 | Typography | MIT License | git.io/normalize */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/*! normalize.css v3.0.0 | Embedded Content | MIT License | git.io/normalize */
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/*! normalize.css v3.0.0 | Figures | MIT License | git.io/normalize */
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+pre {
+  overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/*! normalize.css v3.0.0 | Forms | MIT License | git.io/normalize */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+/*! normalize.css v3.0.0 | Tables | MIT License | git.io/normalize */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Zenzai Itache";
+  src: url('/fonts/Zenzai Itache.ttf?1366631444') format('truetype');
+}
+@font-face {
+  font-family: "Zenzai Itacha";
+  src: url('/fonts/Zenzai Itacha.ttf?1366631466') format('truetype');
+}
+@font-face {
+  font-family: "Zenzai Itachi";
+  src: url('/fonts/Zenzai Itachi.ttf?1366597904') format('truetype');
+}
+@font-face {
+  font-family: "secrcode";
+  src: url('/fonts/secrcode.ttf?901099158') format('truetype');
+}
+body {
+  font-size: 100%;
+  width: 100%;
+  height: 100%;
+  /*文字反锯齿*/
+  -webkit-font-smoothing: antialiased;
+}
+
+ul, li {
+  list-style-type: none;
+  margin-left: 0;
+  padding: 0;
+}
+
+.slide {
+  position: relative;
+  overflow: hidden;
+  -moz-background-origin: content;
+  -o-background-origin: content-box;
+  -webkit-background-origin: content;
+  background-origin: content-box;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.pageIntro {
+  color: #2e1e02;
+  font-family: KaiTi, STKaiti, SimHei, SimSun;
+  position: absolute;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: left;
+}
+@media screen and (max-width: 1920px) {
+  .pageIntro {
+    width: 55%;
+    left: 30%;
+    height: 20%;
+    top: 78%;
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .pageIntro {
+    width: 55%;
+    left: 30%;
+    height: 20%;
+    top: 70%;
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .pageIntro {
+    top: 75%;
+    left: 25%;
+    width: 60%;
+    height: 20%;
+    font-size: 1.3em;
+  }
+}
+@media screen and (max-width: 960px) {
+  .pageIntro {
+    top: 68%;
+    left: 25%;
+    width: 60%;
+    height: 20%;
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .pageIntro {
+    top: 65%;
+    left: 25%;
+    width: 60%;
+    height: 20%;
+    font-size: 1em;
+  }
+}
+
+/*----------------  首页  ------------------*/
+#bg-index {
+  background: url(../images/bg-start/bg.jpg);
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+#bg-index .cnTitle {
+  background: url(../images/bg-start/cn-title.png) no-repeat;
+  width: 100%;
+  height: 100%;
+  -moz-background-size: 25%;
+  -o-background-size: 25%;
+  -webkit-background-size: 25%;
+  background-size: 25%;
+  left: 18%;
+  top: 10%;
+  position: absolute;
+  -moz-animation-name: showCnTitle;
+  -webkit-animation-name: showCnTitle;
+  animation-name: showCnTitle;
+  -moz-animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-moz-keyframes showCnTitle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@-webkit-keyframes showCnTitle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes showCnTitle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+#bg-index .enTitle {
+  background: url(../images/bg-start/en-title.png) no-repeat;
+  width: 100%;
+  height: 100%;
+  -moz-background-size: 18%;
+  -o-background-size: 18%;
+  -webkit-background-size: 18%;
+  background-size: 18%;
+  left: 45%;
+  top: 42%;
+  position: absolute;
+  -moz-animation-name: showEnTitle;
+  -webkit-animation-name: showEnTitle;
+  animation-name: showEnTitle;
+  -moz-animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -moz-animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-moz-keyframes showEnTitle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@-webkit-keyframes showEnTitle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes showEnTitle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+#bg-index .subtitle {
+  background: url(../images/bg-start/subtitle.png) no-repeat;
+  width: 30%;
+  height: 20%;
+  -moz-background-size: 7%;
+  -o-background-size: 7%;
+  -webkit-background-size: 7%;
+  background-size: 7%;
+  left: 45%;
+  top: 60%;
+  position: absolute;
+  -moz-animation-name: showSubTitle;
+  -webkit-animation-name: showSubTitle;
+  animation-name: showSubTitle;
+  -moz-animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -moz-animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-moz-keyframes showSubTitle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@-webkit-keyframes showSubTitle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes showSubTitle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+#bg-index .seal {
+  background: url(../images/bg-start/seal.png) no-repeat;
+  width: 100%;
+  height: 100%;
+  -moz-background-size: 3%;
+  -o-background-size: 3%;
+  -webkit-background-size: 3%;
+  background-size: 3%;
+  left: 45%;
+  top: 80%;
+  position: absolute;
+  -moz-animation-name: showSeal;
+  -webkit-animation-name: showSeal;
+  animation-name: showSeal;
+  -moz-animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -moz-animation-delay: 5s;
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  z-index: 999;
+}
+@-moz-keyframes showSeal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@-webkit-keyframes showSeal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes showSeal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+#bg-index .people {
+  background: url(../images/bg-start/people.png) no-repeat;
+  width: 100%;
+  height: 100%;
+  -moz-background-size: 50%;
+  -o-background-size: 50%;
+  -webkit-background-size: 50%;
+  background-size: 50%;
+  left: 50%;
+  top: 45%;
+  position: absolute;
+  -moz-animation-name: showPeople;
+  -webkit-animation-name: showPeople;
+  animation-name: showPeople;
+  -moz-animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -moz-animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  z-index: 998;
+}
+@-moz-keyframes showPeople {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 50%;
+  }
+}
+@-webkit-keyframes showPeople {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 50%;
+  }
+}
+@keyframes showPeople {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 50%;
+  }
+}
+#bg-index .shockPeopleAnimation {
+  left: 55%;
+  -moz-animation-name: shockPeopleAnimation;
+  -webkit-animation-name: shockPeopleAnimation;
+  animation-name: shockPeopleAnimation;
+  -moz-animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -moz-animation-direction: alternate;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+@-moz-keyframes shockPeopleAnimation {
+  0% {
+    margin-left: -5%;
+    margin-top: 0%;
+  }
+  50% {
+    margin-left: -6%;
+    margin-top: -1%;
+  }
+  100% {
+    margin-left: -7%;
+    margin-top: 0%;
+  }
+}
+@-webkit-keyframes shockPeopleAnimation {
+  0% {
+    margin-left: -5%;
+    margin-top: 0%;
+  }
+  50% {
+    margin-left: -6%;
+    margin-top: -1%;
+  }
+  100% {
+    margin-left: -7%;
+    margin-top: 0%;
+  }
+}
+@keyframes shockPeopleAnimation {
+  0% {
+    margin-left: -5%;
+    margin-top: 0%;
+  }
+  50% {
+    margin-left: -6%;
+    margin-top: -1%;
+  }
+  100% {
+    margin-left: -7%;
+    margin-top: 0%;
+  }
+}
+/*----------------  首页结束  ------------------*/
+/*----------------  第一页开始  ------------------*/
+#bg-page1 {
+  background: url(../images/bg-page1/bg.jpg);
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  /*标题*/
+}
+#bg-page1 .title li:nth-child(1) {
+  background: url(../images/bg-page1/title1.png) no-repeat;
+  width: 100%;
+  height: 100%;
+  -moz-background-size: 9%;
+  -o-background-size: 9%;
+  -webkit-background-size: 9%;
+  background-size: 9%;
+  left: 8%;
+  top: 30%;
+  position: absolute;
+}
+#bg-page1 .showPage1Title1 {
+  -moz-animation-name: showPage1Title1;
+  -webkit-animation-name: showPage1Title1;
+  animation-name: showPage1Title1;
+  -moz-animation-duration: 0.3s;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -moz-animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-moz-keyframes showPage1Title1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@-webkit-keyframes showPage1Title1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes showPage1Title1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+#bg-page1 .title li:nth-child(2) {
+  background: url(../images/bg-page1/title2.png) no-repeat;
+  width: 100%;
+  height: 100%;
+  -moz-background-size: 10%;
+  -o-background-size: 10%;
+  -webkit-background-size: 10%;
+  background-size: 10%;
+  left: 12%;
+  top: 60%;
+  position: absolute;
+}
+#bg-page1 .showPage1Title2 {
+  -moz-animation-name: showPage1Title1;
+  -webkit-animation-name: showPage1Title1;
+  animation-name: showPage1Title1;
+  -moz-animation-duration: 0.3s;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-moz-keyframes showPage1Title2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@-webkit-keyframes showPage1Title2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes showPage1Title2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+#bg-page1 .mainContent .stage {
+  position: absolute;
+}
+@media screen and (max-width: 1920px) {
+  #bg-page1 .mainContent .stage {
+    left: 22%;
+    top: 22%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  #bg-page1 .mainContent .stage {
+    left: 18%;
+    top: 23%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #bg-page1 .mainContent .stage {
+    left: 20%;
+    top: 30%;
+  }
+}
+@media screen and (max-width: 960px) {
+  #bg-page1 .mainContent .stage {
+    left: 20%;
+    top: 20%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #bg-page1 .mainContent .stage {
+    left: 20%;
+    top: 20%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #bg-page1 .mainContent .stage {
+    left: 20%;
+    top: 20%;
+  }
+}
+#bg-page1 .showPage1Stage {
+  -moz-animation-name: showPage1Stage;
+  -webkit-animation-name: showPage1Stage;
+  animation-name: showPage1Stage;
+  -moz-animation-duration: 0.4s;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-moz-keyframes showPage1Stage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@-webkit-keyframes showPage1Stage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes showPage1Stage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+#bg-page1 .scene:first-child {
+  border: 3px solid #fff335;
+}
+#bg-page1 .scene {
+  float: left;
+  border: 3px solid #1b1b1b;
+  padding: 4px;
+  -moz-perspective: 1000px;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+@media screen and (max-width: 1920px) {
+  #bg-page1 .scene {
+    -moz-border-radius: 152px;
+    -webkit-border-radius: 152px;
+    border-radius: 152px;
+    margin: 35px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  #bg-page1 .scene {
+    -moz-border-radius: 127px;
+    -webkit-border-radius: 127px;
+    border-radius: 127px;
+    margin: 35px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #bg-page1 .scene {
+    -moz-border-radius: 92px;
+    -webkit-border-radius: 92px;
+    border-radius: 92px;
+    margin: 35px;
+  }
+}
+@media screen and (max-width: 960px) {
+  #bg-page1 .scene {
+    -moz-border-radius: 65px;
+    -webkit-border-radius: 65px;
+    border-radius: 65px;
+    margin: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #bg-page1 .scene {
+    -moz-border-radius: 52px;
+    -webkit-border-radius: 52px;
+    border-radius: 52px;
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #bg-page1 .scene {
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    margin: 5px;
+  }
+}
+#bg-page1 .scene .content {
+  background: #1b1b1b;
+  position: relative;
+}
+@media screen and (max-width: 1920px) {
+  #bg-page1 .scene .content {
+    width: 300px;
+    height: 300px;
+    -moz-border-radius: 150px;
+    -webkit-border-radius: 150px;
+    border-radius: 150px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  #bg-page1 .scene .content {
+    width: 250px;
+    height: 250px;
+    -moz-border-radius: 125px;
+    -webkit-border-radius: 125px;
+    border-radius: 125px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #bg-page1 .scene .content {
+    width: 180px;
+    height: 180px;
+    -moz-border-radius: 90px;
+    -webkit-border-radius: 90px;
+    border-radius: 90px;
+  }
+}
+@media screen and (max-width: 960px) {
+  #bg-page1 .scene .content {
+    width: 120px;
+    height: 120px;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #bg-page1 .scene .content {
+    width: 90px;
+    height: 90px;
+    -moz-border-radius: 45px;
+    -webkit-border-radius: 45px;
+    border-radius: 45px;
+  }
+}
+#bg-page1 .scene .content .cowskin {
+  background: url(../images/bg-page1/cow.svg) no-repeat;
+  -moz-background-size: 80%;
+  -o-background-size: 80%;
+  -webkit-background-size: 80%;
+  background-size: 80%;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#bg-page1 .scene .content .sheepskin {
+  background: url(../images/bg-page1/sheep.svg) no-repeat;
+  -moz-background-size: 80%;
+  -o-background-size: 80%;
+  -webkit-background-size: 80%;
+  background-size: 80%;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#bg-page1 .scene .content .pigskin {
+  background: url(../images/bg-page1/pig.svg) no-repeat;
+  -moz-background-size: 80%;
+  -o-background-size: 80%;
+  -webkit-background-size: 80%;
+  background-size: 80%;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#bg-page1 .scene .content .clip {
+  cursor: pointer;
+  position: absolute;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  background: #1b1b1b;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  text-align: center;
+  font-family: KaiTi, STKaiti, SimHei, SimSun;
+  transition: all .3s;
+}
+#bg-page1 .scene .content .clip:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+}
+@media screen and (max-width: 1920px) {
+  #bg-page1 .scene .content .clip {
+    -moz-border-radius: 150px;
+    -webkit-border-radius: 150px;
+    border-radius: 150px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  #bg-page1 .scene .content .clip {
+    -moz-border-radius: 125px;
+    -webkit-border-radius: 125px;
+    border-radius: 125px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #bg-page1 .scene .content .clip {
+    -moz-border-radius: 90px;
+    -webkit-border-radius: 90px;
+    border-radius: 90px;
+  }
+}
+@media screen and (max-width: 960px) {
+  #bg-page1 .scene .content .clip {
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+  }
+}
+@media screen and (max-width: 1920px) {
+  #bg-page1 .scene .content .clip .title {
+    font-size: 2.5em;
+  }
+}
+@media screen and (max-width: 1440px) {
+  #bg-page1 .scene .content .clip .title {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #bg-page1 .scene .content .clip .title {
+    font-size: 1.8em;
+  }
+}
+@media screen and (max-width: 960px) {
+  #bg-page1 .scene .content .clip .title {
+    font-size: 1.5em;
+    margin-top: 35%;
+  }
+}
+@media screen and (max-width: 1920px) {
+  #bg-page1 .scene .content .clip .text {
+    font-size: 1.3em;
+  }
+}
+@media screen and (max-width: 1440px) {
+  #bg-page1 .scene .content .clip .text {
+    font-size: 1.1em;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #bg-page1 .scene .content .clip .text {
+    font-size: .8em;
+  }
+}
+@media screen and (max-width: 960px) {
+  #bg-page1 .scene .content .clip .text {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  #bg-page1 .scene .content .clip .text {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+}
+#bg-page1 .showPage1PageIntro {
+  -moz-animation-name: showPage1PageIntro;
+  -webkit-animation-name: showPage1PageIntro;
+  animation-name: showPage1PageIntro;
+  -moz-animation-duration: 0.3s;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -moz-animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-moz-keyframes showPage1PageIntro {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@-webkit-keyframes showPage1PageIntro {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes showPage1PageIntro {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+/*----------------  第一页结束  ------------------*/
+/*----------------  第二页开始  ------------------*/
+#bg-page2 {
+  background: url(../images/bg-page2/bg.jpg);
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  /*标题*/
+}
+#bg-page2 .title li:nth-child(1) {
+  background: url(../images/bg-page2/title1.png) no-repeat;
+  width: 22%;
+  height: 15%;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+  left: 4%;
+  top: 30%;
+  position: absolute;
+}
+#bg-page2 .title li:nth-child(2) {
+  background: url(../images/bg-page2/title2.png) no-repeat;
+  width: 22%;
+  height: 15%;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+  left: 8%;
+  top: 60%;
+  position: absolute;
+}
+.guamaotitle1 {
+  -moz-animation-name: guamaotitle1;
+  -webkit-animation-name: guamaotitle1;
+  animation-name: guamaotitle1;
+  -moz-animation-duration: 8s;
+  -webkit-animation-duration: 8s;
+  animation-duration: 8s;
+  -moz-animation-delay: 7s;
+  -webkit-animation-delay: 7s;
+  animation-delay: 7s;
+  -moz-animation-fill-mode: backward;
+  -webkit-animation-fill-mode: backward;
+  animation-fill-mode: backward;
+}
+
+@-moz-keyframes guamaotitle1 {
+  0% {
+    background: url(../images/bg-page2/title3.png) no-repeat;
+    -moz-background-size: contain;
+    background-size: contain;
+  }
+  100% {
+    background: url(../images/bg-page2/title3.png) no-repeat;
+    -moz-background-size: contain;
+    background-size: contain;
+  }
+}
+@-webkit-keyframes guamaotitle1 {
+  0% {
+    background: url(../images/bg-page2/title3.png) no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  100% {
+    background: url(../images/bg-page2/title3.png) no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@keyframes guamaotitle1 {
+  0% {
+    background: url(../images/bg-page2/title3.png) no-repeat;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  100% {
+    background: url(../images/bg-page2/title3.png) no-repeat;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+.guamaotitle2 {
+  -moz-animation-name: guamaotitle2;
+  -webkit-animation-name: guamaotitle2;
+  animation-name: guamaotitle2;
+  -moz-animation-duration: 8s;
+  -webkit-animation-duration: 8s;
+  animation-duration: 8s;
+  -moz-animation-delay: 7s;
+  -webkit-animation-delay: 7s;
+  animation-delay: 7s;
+  -moz-animation-fill-mode: backward;
+  -webkit-animation-fill-mode: backward;
+  animation-fill-mode: backward;
+}
+
+@-moz-keyframes guamaotitle2 {
+  0% {
+    background: url(../images/bg-page2/title4.png) no-repeat;
+    -moz-background-size: contain;
+    background-size: contain;
+  }
+  100% {
+    background: url(../images/bg-page2/title4.png) no-repeat;
+    -moz-background-size: contain;
+    background-size: contain;
+  }
+}
+@-webkit-keyframes guamaotitle2 {
+  0% {
+    background: url(../images/bg-page2/title4.png) no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  100% {
+    background: url(../images/bg-page2/title4.png) no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@keyframes guamaotitle2 {
+  0% {
+    background: url(../images/bg-page2/title4.png) no-repeat;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  100% {
+    background: url(../images/bg-page2/title4.png) no-repeat;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+#bg-page2 .mainContent {
+  position: absolute;
+  width: 75%;
+  height: 70%;
+  left: 17%;
+  top: 20%;
+}
+#bg-page2 .mainContent > div[class="step"] {
+  width: 100%;
+  height: 100%;
+  float: left;
+  margin: 0 auto;
+  position: absolute;
+}
+#bg-page2 .mainContent #step1 .animation-cow {
+  width: 100%;
+  height: 100%;
+  background: url(../images/bg-page2/cow-1.gif) no-repeat;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  cursor: pointer;
+  z-index: 9999;
+}
+.delayPic-cow {
+  -moz-animation-name: delayPic-cow;
+  -webkit-animation-name: delayPic-cow;
+  animation-name: delayPic-cow;
+  -moz-animation-duration: 0.8s;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -moz-animation-delay: 13s;
+  -webkit-animation-delay: 13s;
+  animation-delay: 13s;
+  -moz-animation-fill-mode: backward;
+  -webkit-animation-fill-mode: backward;
+  animation-fill-mode: backward;
+}
+
+@-moz-keyframes delayPic-cow {
+  0% {
+    background: url(../images/bg-page2/cow-3.gif) no-repeat;
+    -moz-background-size: contain;
+    background-size: contain;
+  }
+  100% {
+    background: url(../images/bg-page2/cow-3.gif) no-repeat;
+    -moz-background-size: contain;
+    background-size: contain;
+  }
+}
+@-webkit-keyframes delayPic-cow {
+  0% {
+    background: url(../images/bg-page2/cow-3.gif) no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  100% {
+    background: url(../images/bg-page2/cow-3.gif) no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@keyframes delayPic-cow {
+  0% {
+    background: url(../images/bg-page2/cow-3.gif) no-repeat;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  100% {
+    background: url(../images/bg-page2/cow-3.gif) no-repeat;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+#bg-page2 .mainContent #step1 .animation-sheep {
+  width: 100%;
+  height: 100%;
+  background: url(../images/bg-page2/sheep-1.gif) no-repeat;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+}
+.delayPic-sheep {
+  -moz-animation-name: delayPic-sheep;
+  -webkit-animation-name: delayPic-sheep;
+  animation-name: delayPic-sheep;
+  -moz-animation-duration: 0.8s;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -moz-animation-delay: 13s;
+  -webkit-animation-delay: 13s;
+  animation-delay: 13s;
+  -moz-animation-fill-mode: backward;
+  -webkit-animation-fill-mode: backward;
+  animation-fill-mode: backward;
+}
+
+@-moz-keyframes delayPic-sheep {
+  0% {
+    background: url(../images/bg-page2/sheep-3.gif) no-repeat;
+    -moz-background-size: contain;
+    background-size: contain;
+  }
+  100% {
+    background: url(../images/bg-page2/sheep-3.gif) no-repeat;
+    -moz-background-size: contain;
+    background-size: contain;
+  }
+}
+@-webkit-keyframes delayPic-sheep {
+  0% {
+    background: url(../images/bg-page2/sheep-3.gif) no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  100% {
+    background: url(../images/bg-page2/sheep-3.gif) no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@keyframes delayPic-sheep {
+  0% {
+    background: url(../images/bg-page2/sheep-3.gif) no-repeat;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  100% {
+    background: url(../images/bg-page2/sheep-3.gif) no-repeat;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+#bg-page2 .mainContent #step1 .animation-pig {
+  width: 100%;
+  height: 100%;
+  background: url(../images/bg-page2/pig-1.gif) no-repeat;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+}
+.delayPic-pig {
+  -moz-animation-name: delayPic-pig;
+  -webkit-animation-name: delayPic-pig;
+  animation-name: delayPic-pig;
+  -moz-animation-duration: 0.8s;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -moz-animation-delay: 13s;
+  -webkit-animation-delay: 13s;
+  animation-delay: 13s;
+  -moz-animation-fill-mode: backward;
+  -webkit-animation-fill-mode: backward;
+  animation-fill-mode: backward;
+}
+
+@-moz-keyframes delayPic-pig {
+  0% {
+    background: url(../images/bg-page2/pig-3.gif) no-repeat;
+    -moz-background-size: contain;
+    background-size: contain;
+  }
+  100% {
+    background: url(../images/bg-page2/pig-3.gif) no-repeat;
+    -moz-background-size: contain;
+    background-size: contain;
+  }
+}
+@-webkit-keyframes delayPic-pig {
+  0% {
+    background: url(../images/bg-page2/pig-3.gif) no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  100% {
+    background: url(../images/bg-page2/pig-3.gif) no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@keyframes delayPic-pig {
+  0% {
+    background: url(../images/bg-page2/pig-3.gif) no-repeat;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  100% {
+    background: url(../images/bg-page2/pig-3.gif) no-repeat;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+#bg-page2 .mainContent #step2 {
+  width: 100%;
+  height: 100%;
+  background: url(../images/bg-page2/liangpi.gif) no-repeat transparent;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+}
+
+/*----------------  第二页结束  ------------------*/
+/*----------------  第三页开始  ------------------*/
+#bg-page3 {
+  background: url(../images/bg-page3/bg.jpg);
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  /*标题*/
+}
+#bg-page3 .title li:nth-child(1) {
+  background: url(../images/bg-page3/title1.png) no-repeat;
+  width: 100%;
+  height: 100%;
+  -moz-background-size: 9%;
+  -o-background-size: 9%;
+  -webkit-background-size: 9%;
+  background-size: 9%;
+  left: 82%;
+  top: 30%;
+  position: absolute;
+}
+#bg-page3 .showPage3Title1 {
+  -moz-animation-name: showPage3Title1;
+  -webkit-animation-name: showPage3Title1;
+  animation-name: showPage3Title1;
+  -moz-animation-duration: 0.3s;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -moz-animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-moz-keyframes showPage3Title1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@-webkit-keyframes showPage3Title1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes showPage3Title1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+#bg-page3 .title li:nth-child(2) {
+  background: url(../images/bg-page3/title2.png) no-repeat;
+  width: 100%;
+  height: 100%;
+  -moz-background-size: 10%;
+  -o-background-size: 10%;
+  -webkit-background-size: 10%;
+  background-size: 10%;
+  left: 86%;
+  top: 60%;
+  position: absolute;
+}
+#bg-page3 .showPage3Title2 {
+  -moz-animation-name: showPage3Title1;
+  -webkit-animation-name: showPage3Title1;
+  animation-name: showPage3Title1;
+  -moz-animation-duration: 0.3s;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-moz-keyframes showPage3Title2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@-webkit-keyframes showPage3Title2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes showPage3Title2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+#bg-page3 .mainContent {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 1%;
+}
+#bg-page3 .mainContent #myCanvas {
+  left: 35%;
+  top: 5%;
+  position: absolute;
+}
+@media screen and (max-width: 2000px) {
+  #bg-page3 .mainContent #myCanvas {
+    width: 432px;
+    height: 608px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #bg-page3 .mainContent #myCanvas {
+    width: 192px;
+    height: 278px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #bg-page3 .mainContent #myCanvas {
+    width: 145px;
+    height: 214px;
+  }
+}
+#bg-page3 .mainContent .control-ops {
+  width: 15%;
+  height: 80%;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+}
+#bg-page3 .mainContent .control-ops li {
+  margin: 30% 0;
+  width: 100%;
+  height: 10%;
+  text-align: center;
+}
+#bg-page3 .mainContent .control-ops li button {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border-style: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+  font-family: SimSun;
+  background: #b18840;
+  -moz-box-shadow: 0px 5px #98735a;
+  -webkit-box-shadow: 0px 5px #98735a;
+  box-shadow: 0px 5px #98735a;
+}
+@media screen and (max-width: 2000px) {
+  #bg-page3 .mainContent .control-ops li button {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #bg-page3 .mainContent .control-ops li button {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 500px) {
+  #bg-page3 .mainContent .control-ops li button {
+    font-size: 0.5em;
+  }
+}
+#bg-page3 .mainContent .control-ops li #selWidth, #bg-page3 .mainContent .control-ops li #selColor {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border-style: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #fff;
+  font-family: SimSun;
+  background: #b18840;
+  text-align: center;
+  -moz-box-shadow: 0px 5px #98735a;
+  -webkit-box-shadow: 0px 5px #98735a;
+  box-shadow: 0px 5px #98735a;
+}
+@media screen and (max-width: 2000px) {
+  #bg-page3 .mainContent .control-ops li #selWidth, #bg-page3 .mainContent .control-ops li #selColor {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #bg-page3 .mainContent .control-ops li #selWidth, #bg-page3 .mainContent .control-ops li #selColor {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 500px) {
+  #bg-page3 .mainContent .control-ops li #selWidth, #bg-page3 .mainContent .control-ops li #selColor {
+    font-size: 0.5em;
+  }
+}
+
+/*----------------  第三页结束  ------------------*/
+/*----------------  第四页开始  ------------------*/
+#bg-page4 {
+  background: url(../images/bg-page4/bg.jpg);
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  /*标题*/
+}
+#bg-page4 .title li:nth-child(1) {
+  background: url(../images/bg-page4/title1.png) no-repeat;
+  width: 100%;
+  height: 100%;
+  -moz-background-size: 10%;
+  -o-background-size: 10%;
+  -webkit-background-size: 10%;
+  background-size: 10%;
+  left: 82%;
+  top: 30%;
+  position: absolute;
+}
+#bg-page4 .title li:nth-child(2) {
+  background: url(../images/bg-page4/title2.png) no-repeat;
+  width: 100%;
+  height: 100%;
+  -moz-background-size: 10%;
+  -o-background-size: 10%;
+  -webkit-background-size: 10%;
+  background-size: 10%;
+  left: 86%;
+  top: 60%;
+  position: absolute;
+}
+#bg-page4 #page4mainContent1 {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  left: 10%;
+  top: 8%;
+  opacity: 1;
+  z-index: 9999;
+}
+#bg-page4 #page4mainContent1 .person {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  margin-top: 10%;
+}
+#bg-page4 #page4mainContent1 .person .bodypart {
+  float: left;
+  width: 15%;
+  height: 100%;
+  margin-right: 2%;
+  cursor: pointer;
+  position: relative;
+}
+#bg-page4 #page4mainContent1 .person .bodypart:last-child {
+  margin-right: 0;
+}
+#bg-page4 #page4mainContent1 .person .head {
+  background: url(../images/bg-page4/head-1.png) no-repeat;
+  background-position: center;
+  -moz-background-size: "contain";
+  -o-background-size: "contain";
+  -webkit-background-size: "contain";
+  background-size: "contain";
+}
+#bg-page4 #page4mainContent1 .person .head:hover {
+  background: url(../images/bg-page4/head-2.png) no-repeat;
+  background-position: center;
+  -moz-background-size: "contain";
+  -o-background-size: "contain";
+  -webkit-background-size: "contain";
+  background-size: "contain";
+}
+#bg-page4 #page4mainContent1 .person .rightHand {
+  background: url(../images/bg-page4/righthand-1.png) no-repeat;
+  background-position: center;
+  -moz-background-size: "contain";
+  -o-background-size: "contain";
+  -webkit-background-size: "contain";
+  background-size: "contain";
+}
+#bg-page4 #page4mainContent1 .person .rightHand:hover {
+  background: url(../images/bg-page4/righthand-2.png) no-repeat;
+  background-position: center;
+  -moz-background-size: "contain";
+  -o-background-size: "contain";
+  -webkit-background-size: "contain";
+  background-size: "contain";
+}
+#bg-page4 #page4mainContent1 .person .leftHand {
+  background: url(../images/bg-page4/lefthand-1.png) no-repeat;
+  background-position: center;
+  -moz-background-size: "contain";
+  -o-background-size: "contain";
+  -webkit-background-size: "contain";
+  background-size: "contain";
+}
+#bg-page4 #page4mainContent1 .person .leftHand:hover {
+  background: url(../images/bg-page4/lefthand-2.png) no-repeat;
+  background-position: center;
+  -moz-background-size: "contain";
+  -o-background-size: "contain";
+  -webkit-background-size: "contain";
+  background-size: "contain";
+}
+#bg-page4 #page4mainContent1 .person .body {
+  background: url(../images/bg-page4/body-1.png) no-repeat;
+  background-position: center;
+  -moz-background-size: "contain";
+  -o-background-size: "contain";
+  -webkit-background-size: "contain";
+  background-size: "contain";
+}
+#bg-page4 #page4mainContent1 .person .body:hover {
+  background: url(../images/bg-page4/body-2.png) no-repeat;
+  background-position: center;
+  -moz-background-size: "contain";
+  -o-background-size: "contain";
+  -webkit-background-size: "contain";
+  background-size: "contain";
+}
+#bg-page4 #page4mainContent1 .person .leftFoot {
+  background: url(../images/bg-page4/leftfoot-1.png) no-repeat;
+  background-position: center;
+  -moz-background-size: "contain";
+  -o-background-size: "contain";
+  -webkit-background-size: "contain";
+  background-size: "contain";
+}
+#bg-page4 #page4mainContent1 .person .leftFoot:hover {
+  background: url(../images/bg-page4/leftfoot-2.png) no-repeat;
+  background-position: center;
+  -moz-background-size: "contain";
+  -o-background-size: "contain";
+  -webkit-background-size: "contain";
+  background-size: "contain";
+}
+#bg-page4 #page4mainContent1 .person .rightFoot {
+  background: url(../images/bg-page4/rightfoot-1.png) no-repeat;
+  background-position: center;
+  -moz-background-size: "contain";
+  -o-background-size: "contain";
+  -webkit-background-size: "contain";
+  background-size: "contain";
+}
+#bg-page4 #page4mainContent1 .person .rightFoot:hover {
+  background: url(../images/bg-page4/rightfoot-2.png) no-repeat;
+  background-position: center;
+  -moz-background-size: "contain";
+  -o-background-size: "contain";
+  -webkit-background-size: "contain";
+  background-size: "contain";
+}
+#bg-page4 #page4mainContent1 .toolbar {
+  position: relative;
+  width: 100%;
+  height: 30%;
+}
+#bg-page4 #page4mainContent1 .toolbar ul {
+  width: 80%;
+  height: 100%;
+  float: left;
+}
+#bg-page4 #page4mainContent1 .toolbar ul li {
+  float: left;
+  width: 30%;
+  height: 100%;
+  margin-right: 5%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: KaiTi, STKaiti, SimHei, SimSun;
+  font-weight: bold;
+  cursor: pointer;
+}
+#bg-page4 #page4mainContent1 .toolbar ul li:nth-of-type(1) {
+  background: url(../images/bg-page4/tool1-1.png) no-repeat;
+  background-position: center;
+  -moz-background-size: "contain";
+  -o-background-size: "contain";
+  -webkit-background-size: "contain";
+  background-size: "contain";
+  border: 2px solid #fff335;
+}
+#bg-page4 #page4mainContent1 .toolbar ul li:nth-of-type(2) {
+  background: url(../images/bg-page4/tool2-1.png) no-repeat;
+  background-position: center;
+  -moz-background-size: "contain";
+  -o-background-size: "contain";
+  -webkit-background-size: "contain";
+  background-size: "contain";
+}
+#bg-page4 #page4mainContent1 .toolbar ul li:last-child {
+  background: url(../images/bg-page4/tool3-1.png) no-repeat;
+  background-position: center;
+  -moz-background-size: "contain";
+  -o-background-size: "contain";
+  -webkit-background-size: "contain";
+  background-size: "contain";
+  margin-right: 0;
+}
+@media screen and (max-width: 2000px) {
+  #bg-page4 #page4mainContent1 .toolbar ul {
+    font-size: 1.8em;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #bg-page4 #page4mainContent1 .toolbar ul {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 500px) {
+  #bg-page4 #page4mainContent1 .toolbar ul {
+    font-size: .8em;
+  }
+}
+#bg-page4 #page4mainContent1 .toolbar .button {
+  position: absolute;
+  width: 15%;
+  height: 30%;
+  right: 0;
+  bottom: 5%;
+  border-style: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: #FFF;
+  font-family: SimSun;
+  text-align: center;
+  background: #b18840;
+  -moz-box-shadow: 0px 5px #98735a;
+  -webkit-box-shadow: 0px 5px #98735a;
+  box-shadow: 0px 5px #98735a;
+}
+#bg-page4 #page4mainContent1 .toolbar .button:active {
+  -moz-box-shadow: 0px 1px #98735a;
+  -webkit-box-shadow: 0px 1px #98735a;
+  box-shadow: 0px 1px #98735a;
+}
+@media screen and (max-width: 2000px) {
+  #bg-page4 #page4mainContent1 .toolbar .button {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #bg-page4 #page4mainContent1 .toolbar .button {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 500px) {
+  #bg-page4 #page4mainContent1 .toolbar .button {
+    font-size: 0.5em;
+  }
+}
+#bg-page4 #page4mainContent2 {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  left: 10%;
+  top: 8%;
+  opacity: 0;
+  z-index: 9998;
+}
+#bg-page4 #page4mainContent2 img {
+  height: 100%;
+  margin: 0 auto;
+  margin-left: 35%;
+}
+
+/*----------------  第四页结束  ------------------*/
+/*----------------  第五页开始  ------------------*/
+#bg-page5 {
+  background: url(../images/bg-page5/bg.jpg);
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  /*标题*/
+}
+#bg-page5 .title li:nth-child(1) {
+  background: url(../images/bg-page5/title1.png) no-repeat;
+  width: 100%;
+  height: 100%;
+  -moz-background-size: 11%;
+  -o-background-size: 11%;
+  -webkit-background-size: 11%;
+  background-size: 11%;
+  left: 4%;
+  top: 20%;
+  position: absolute;
+}
+#bg-page5 .title li:nth-child(2) {
+  background: url(../images/bg-page5/title2.png) no-repeat;
+  width: 100%;
+  height: 100%;
+  -moz-background-size: 12%;
+  -o-background-size: 12%;
+  -webkit-background-size: 12%;
+  background-size: 12%;
+  left: 10%;
+  top: 50%;
+  position: absolute;
+}
+#bg-page5 .sketchpad {
+  width: 60%;
+  height: 80%;
+  margin: 0 auto;
+  background: #ff0;
+  position: relative;
+}
+#bg-page5 canvas {
+  position: absolute;
+  left: 30%;
+  top: 4%;
+  z-index: 9999;
+}
+#bg-page5 #lamp {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+#bg-page5 .colorButtonList {
+  position: absolute;
+  top: 15%;
+  right: 18%;
+  width: 15%;
+  height: 80%;
+}
+#bg-page5 .colorButtonList li {
+  margin: 10% 0;
+  width: 100%;
+  height: 8%;
+}
+#bg-page5 .colorButtonList button {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border-style: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+  font-family: SimSun;
+}
+@media screen and (max-width: 2000px) {
+  #bg-page5 .colorButtonList {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #bg-page5 .colorButtonList {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 500px) {
+  #bg-page5 .colorButtonList {
+    font-size: 0.5em;
+  }
+}
+#bg-page5 .colorButtonList li:nth-of-type(1) button {
+  background: #6da685;
+  -moz-box-shadow: 0px 5px #4c7c60;
+  -webkit-box-shadow: 0px 5px #4c7c60;
+  box-shadow: 0px 5px #4c7c60;
+}
+#bg-page5 .colorButtonList li:nth-of-type(1) button:active {
+  -moz-box-shadow: 0px 1px #4c7c60;
+  -webkit-box-shadow: 0px 1px #4c7c60;
+  box-shadow: 0px 1px #4c7c60;
+}
+#bg-page5 .colorButtonList li:nth-of-type(2) button {
+  background: #4e78ab;
+  -moz-box-shadow: 0px 5px #35577f;
+  -webkit-box-shadow: 0px 5px #35577f;
+  box-shadow: 0px 5px #35577f;
+}
+#bg-page5 .colorButtonList li:nth-of-type(2) button:active {
+  -moz-box-shadow: 0px 1px #35577f;
+  -webkit-box-shadow: 0px 1px #35577f;
+  box-shadow: 0px 1px #35577f;
+}
+#bg-page5 .colorButtonList li:nth-of-type(3) button {
+  background: #c8b258;
+  -moz-box-shadow: 0px 5px #998846;
+  -webkit-box-shadow: 0px 5px #998846;
+  box-shadow: 0px 5px #998846;
+}
+#bg-page5 .colorButtonList li:nth-of-type(3) button:active {
+  -moz-box-shadow: 0px 1px #998846;
+  -webkit-box-shadow: 0px 1px #998846;
+  box-shadow: 0px 1px #998846;
+}
+#bg-page5 .colorButtonList li:nth-of-type(4) button {
+  background: #d27f77;
+  -moz-box-shadow: 0px 5px #9c544d;
+  -webkit-box-shadow: 0px 5px #9c544d;
+  box-shadow: 0px 5px #9c544d;
+}
+#bg-page5 .colorButtonList li:nth-of-type(4) button:active {
+  -moz-box-shadow: 0px 1px #9c544d;
+  -webkit-box-shadow: 0px 1px #9c544d;
+  box-shadow: 0px 1px #9c544d;
+}
+#bg-page5 .colorButtonList li:nth-of-type(5) button {
+  background: #b84235;
+  -moz-box-shadow: 0px 5px #93342b;
+  -webkit-box-shadow: 0px 5px #93342b;
+  box-shadow: 0px 5px #93342b;
+}
+#bg-page5 .colorButtonList li:nth-of-type(5) button:active {
+  -moz-box-shadow: 0px 1px #93342b;
+  -webkit-box-shadow: 0px 1px #93342b;
+  box-shadow: 0px 1px #93342b;
+}
+#bg-page5 .colorButtonList li:nth-of-type(6) button {
+  background: #575757;
+  -moz-box-shadow: 0px 5px #333;
+  -webkit-box-shadow: 0px 5px #333;
+  box-shadow: 0px 5px #333;
+}
+#bg-page5 .colorButtonList li:nth-of-type(6) button:active {
+  -moz-box-shadow: 0px 1px #333;
+  -webkit-box-shadow: 0px 1px #333;
+  box-shadow: 0px 1px #333;
+}
+
+/*----------------  第五页结束  ------------------*/

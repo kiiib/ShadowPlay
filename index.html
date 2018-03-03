@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="renderer" content="webkit"> 
+	<title>皮影制作</title>
+	<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="stylesheets/jquery.fullPage.css">
+
+</head>
+<body>
+	<div class="container">
+	    <div class="section">
+	    	<div class="slide" id="bg-index">
+	    		<div class="cnTitle"></div>
+	    		<div class="enTitle"></div>
+	    		<div class="subtitle"></div>
+	    		<div class="seal"></div>
+	    		<div class="people"></div>
+
+
+	    	</div>
+	        <div class="slide" id="bg-page1" data-content="介绍选皮">
+
+	        	<div>
+	        		<ul class="title">
+	        			<li></li>
+	        			<li></li>
+	        		</ul>
+	        	</div>
+
+				<div class="mainContent">
+					<ul class="stage">
+						<li class="scene" id="scene-cow">
+							<div class="content">
+								<div class="pattern cowskin"></div>
+								<div class="clip" data="cow">
+									<p class="title">牛皮</p>
+									<p class="text">透水性好</p>
+									<p class="text">皮纹粗糙</p>
+									<p class="text">拉扯强度大</p>
+								</div>
+							</div>
+						</li>
+						<li class="scene" id="scene-sheep">
+							<div class="content">
+								<div class="pattern sheepskin"></div>
+								<div class="clip" data="sheep">
+									<p class="title">羊皮</p>
+									<p class="text">花纹美观</p>
+									<p class="text">光泽柔和</p>
+									<p class="text">轻薄柔软
+</p>
+								</div>
+							</div>
+						</li>
+						<li class="scene" id="scene-pig">
+							<div class="content">
+								<div class="pattern pigskin"></div>
+								<div class="clip" data="pig">
+									<p class="title">猪皮</p>
+									<p class="text">分布均匀</p>
+									<p class="text">光亮平滑</p>
+									<p class="text">有弹性
+</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+	        	<div class="pageIntro">由于皮影戏是民间艺术的缘故，各方面的情况都因地方不同而有所差异， 制作材料也根据当地的使用兽皮的情况而定。
+				</div>
+	        </div>
+	        <div class="slide" id="bg-page2" data-content="洗皮">
+				<div>
+	        		<ul class="title">
+	        			<li></li>
+	        			<li></li>
+	        		</ul>
+	        	</div>
+
+				<div class="mainContent">
+					<div class="step" id="step1">
+						<div class="animation-cow" data="cow"></div>
+						<div class="animation-sheep" data="sheep"></div>
+						<div class="animation-pig" data="pig"></div>
+					</div>
+					<div class="step" id="step2">
+						<div class="animation-cow" data="cow"></div>
+						<div class="animation-sheep" data="sheep"></div>
+						<div class="animation-pig" data="pig"></div>
+					</div>
+				</div>
+				
+	        </div>
+
+	        <div class="slide" id="bg-page3" data-content="画稿">
+	        	<div>
+	        		<ul class="title">
+	        			<li></li>
+	        			<li></li>
+	        		</ul>
+	        	</div>
+
+				<div class="mainContent">
+					
+				    <canvas id="myCanvas" style="border:2px solid #eee"></canvas>
+				
+				    	<ul class="control-ops">
+					    	<li>
+					    		 <button type="button" onclick="javascript:clearArea();return false;">重画</button>
+					    	</li>
+					    	
+						   	<li>
+							    <select id="selWidth">
+							        <option value="1"></option>
+							        <option value="3" selected="selected">3</option>
+							        <option value="5">5</option>
+							        <option value="7">7</option>
+							        <option value="9" >9</option>
+							        <option value="11">11</option>
+							    </select>
+						   	</li>
+
+						
+						   	<li>
+							    <select id="selColor">
+							        <option value="black" selected="selected">黑色</option>
+							        <option value="blue">蓝色</option>
+							        <option value="red">红色</option>
+							        <option value="green">绿色</option>
+							        <option value="yellow">黄色</option>
+							        <option value="gray">灰色</option>
+							    </select>
+						   	</li>
+
+						   	
+					   	</ul>
+					
+				</div>
+				
+
+	        </div>
+	        <div class="slide" id="bg-page4" data-content="镂刻">
+	        	<div>
+	        		<ul class="title">
+	        			<li></li>
+	        			<li></li>
+	        		</ul>
+	        	</div>
+
+				<div class="mainContent" id="page4mainContent1">
+					<div class="person">
+						<div class="head bodypart"></div>
+						<div class="rightHand bodypart"></div>
+						<div class="leftHand bodypart"></div>
+						<div class="body bodypart"></div>
+						<div class="leftFoot bodypart"></div>
+						<div class="rightFoot bodypart"></div>
+					</div>
+					<div class="toolbar">
+						<ul>
+							<li><p>锋刀</p></li>
+							<li><p>斜刀</p></li>
+							<li><p>刻刀</p></li>
+						</ul>
+						<button class="button">拼合</button>
+					</div>
+				</div>
+				<div class="mainContent" id="page4mainContent2">
+					<img src="images/bg-page4/fullpeople.png" alt="镂刻人物">
+				</div>
+
+
+
+	        </div>
+
+	        <div class="slide" id="bg-page5" data-content="敷彩">
+				<div>
+	        		<ul class="title">
+	        			<li></li>
+	        			<li></li>
+	        		</ul>
+	        	</div>
+
+					<canvas></canvas>
+					<img id="lamp" src="">
+				
+				<ul class="colorButtonList">
+					<li><button data="green-">绿色</button></li>
+					<li><button data="blue-">蓝色</button></li>
+					<li><button data="yellow-">黄色</button></li>
+					<li><button data="pink-">粉色</button></li>
+					<li><button data="red-">红色</button></li>
+					<li><button data="old-">重置</button></li>
+				</ul>
+				
+				<!-- <div class="currentcolor">当前：</div> -->
+
+				<div class="pageIntro"></div> 
+	       	</div>
+
+	        <!-- <div class="slide" id="bg-page6" data-content="尾页">
+	        	
+	        </div> -->
+
+	    </div>
+	</div>
+
+</body>
+<script src="javascripts/jquery-1.11.1.min.js"></script>
+<script src="javascripts/jquery.mousewheel.min.js"></script>
+<script src="javascripts/jquery.fullPage.js"></script>
+<script src="javascripts/main.js"></script>
+</html>
+
+
